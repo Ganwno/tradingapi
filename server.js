@@ -9,9 +9,7 @@ const app = express();
 // Connect to the MongoDB database
 mongoose.connect('mongodb+srv://omniteleos:drojuope10@salesforce.3fzphwe.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
+    useUnifiedTopology: true
 });
 
 const db = mongoose.connection;
